@@ -9,7 +9,11 @@ let mapleader=","
 set number
 
 " Enable syntax highlighting
+" If using iTerm2 download and set the theme in Profile -> Colors
 syntax on
+set t_Co=256
+set background=dark
+colorscheme jellybeans
 
 " Highlight current line
 set cursorline
