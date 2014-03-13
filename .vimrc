@@ -18,8 +18,10 @@ colorscheme jellybeans
 " Highlight current line
 set cursorline
 
-" Make tabs as wide as two spaces
+" Make tabs as wide as two spaces and use spaces instead of tabs
 set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
