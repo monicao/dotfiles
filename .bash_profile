@@ -8,3 +8,7 @@ alias start_mongo='mongod&'
 
 export PATH=$PATH:/Users/momo/bin
 export TERM="xterm-256color"
+
+# NVM - Node version manager
+source $(brew --prefix nvm)/nvm.sh
+
