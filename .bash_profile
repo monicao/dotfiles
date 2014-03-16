@@ -1,6 +1,7 @@
 alias vim='mvim -v'
 alias ls='ls -FGash'
 alias cddev='cd /Users/momo/Code'
+alias be="bundle exec "
 eval "$(rbenv init -)"
 
 alias start_redis='redis-server /usr/local/etc/redis.conf&'
