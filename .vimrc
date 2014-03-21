@@ -8,6 +8,11 @@ let mapleader=","
 " Enable line numbers
 set number
 
+" Automatically load file changes
+source ~/.vim/bundle/watchforchanges/watchforchanges.vim
+let autoreadargs={'autoread':1}
+execute WatchForChanges("*", autoreadargs)
+
 " Enable syntax highlighting
 " If using iTerm2 download and set the theme in Profile -> Colors
 syntax on
