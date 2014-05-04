@@ -88,3 +88,13 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v[\/].(gif|ico|jpg|png|zip)$',
   \ 'link': ''
   \ }
+
+" NERDTree
+" Open nerdtree on startup if no file was specified
+" autocmd vimenter * if !argc() | NERDTree | endif
+" Set up nerdtree shortcut: Ctrl + Shift + K
+map <C-S-k> :NERDTreeToggle<CR>
+" Close vim if the only open window is nerdtree
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Close nt after opening a file
+let NERDTreeQuitOnOpen = 1 
