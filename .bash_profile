@@ -15,3 +15,7 @@ export GOAT_HOME=$HOME/Code/disclosed
 # NVM - Node version manager
 source $(brew --prefix nvm)/nvm.sh
 
+# Git command line autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
