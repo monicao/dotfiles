@@ -36,7 +36,7 @@ set list
 set hlsearch
 
 " Ignore case of searches
-set ignorecase
+" set ignorecase
 
 " Highlight dynamically as pattern is typed
 set incsearch
@@ -84,7 +84,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Ctrl-P
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](dist|node_modules|tmp|\.git|\.tmp)$',
+  \ 'dir':  '\v[\/](dist|node_modules|tmp|\.git|\.tmp|log)$',
   \ 'file': '\v[\/].(gif|ico|jpg|png|zip)$',
   \ 'link': ''
   \ }
