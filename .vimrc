@@ -80,11 +80,11 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 
 " Ignore
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.rdb
 
 " Ctrl-P
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](dist|node_modules|tmp|\.git|\.tmp|log)$',
+  \ 'dir':  '\v[\/](dist|node_modules|tmp|\.git|\.tmp|log|source_maps)$',
   \ 'file': '\v[\/].(gif|ico|jpg|png|zip)$',
   \ 'link': ''
   \ }
@@ -98,3 +98,7 @@ map <C-S-k> :NERDTreeToggle<CR>
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " Close nt after opening a file
 let NERDTreeQuitOnOpen = 1 
+
+" EasyGrep options: <Leader>vo
+let g:EasyGrepFilesToExclude = '*.git\*,*.sql,*.gz,*.bz2,*.tar,*.zip,*.jpg,*.png,*.gif,*.log,*.rdb'
+
