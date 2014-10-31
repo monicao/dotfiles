@@ -18,3 +18,5 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export ANDROID_HOME="/usr/local/Cellar/android-sdk/23.0.2"

@@ -5,6 +5,9 @@ filetype plugin indent on
 " Change mapleader
 let mapleader=","
 
+" Map : to ;
+nnoremap ; :
+
 " Enable line numbers
 set number
 
@@ -84,7 +87,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.rdb
 
 " Ctrl-P
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](dist|node_modules|tmp|\.git|\.tmp|log|source_maps)$',
+  \ 'dir':  '\v[\/](dist|node_modules|bower_components|cordova|tmp|\.git|\.tmp|log|source_maps)$',
   \ 'file': '\v[\/].(gif|ico|jpg|png|zip)$',
   \ 'link': ''
   \ }
