@@ -11,6 +11,8 @@ export GOPATH=$HOME/go
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin/:/usr/local/heroku/bin:$PATH:$HOME/bin:/usr/local/Cellar/go/1.2.1/libexec/bin:$GOPATH/bin
 export TERM="xterm-256color"
 
+export SECRET_KEY_BASE="supersecret"
+
 # Git command line autocomplete
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
